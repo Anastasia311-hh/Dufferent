@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>&hearts;</title>
+        <link rel="shortcut icon" href="/разное/ит/1639479701_6-flomaster-club-p-miloe-serdechko-dlya-srisovki-krasivie-ris-7.png" type="image/x-icon">
+        <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+        </style>
+        <link href="css/default.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/garden.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+        </head>
+        <body>
+        <div id="mainDiv">
+            <div id="content" style="width: 1110px; height: 625px; margin-top: 51px; margin-left: 10px;">
+                <div id="code" style="margin-top: 112.5px;">
+                    <span class="comments">&hearts;&hearts;&hearts;</span><br>
+                    <span class="space"><span class="comments">&hearts;26-04-2020&hearts;</span><br>
+                    <span class="comments">&hearts;&hearts;&hearts;</span><br>
+                    Любимый мужчина - Артем<br>
+                    Самая лучшая девочка - Анастасия<br>
+                    <span class="comments">&hearts; Все началось с глупого подката,</span><br>
+                    Игры в "Дурака" и прекрасной вместепроведенной ночи.<br>
+                    <span class="comments">&hearts; Это была любовь...</span><br>
+                    Любовь с первого взгляда.<br>
+                    <span class="comments">&hearts; Та любовь, которая живет вечно,</span><br>
+                    Которая, несмотря ни на что, всегда будет в наших сердцах и между нами.<br>
+                    <span class="comments">&hearts; Мы изменились, стали взрослее, лучше</span><br>
+                    Меняется наша жизнь и жизнь вокруг нас.<br>
+                    <span class="comments">&hearts; Но есть одна постоянная в этом мире - моя безграничная любовь. </span><br>
+                    <span class="comments">&hearts; Между нами 4000 километров...</span><br>
+                    <span class="keyword">Однако, я чувствую твои прикосновения, твой запах</span><br>
+                    <span class="keyword">Как будто ты всего лишь в милиметре от меня.</span>;<br>
+                    <span class="placeholder"><span class="comments">&hearts; Мне так нравится любить тебя!</span><br>
+                    <br>
+                    <br>
+                    Артем Александрович,<br>
+                    Я вас люблю, любовь еще быть может!!!;<br>
+                </span></span></span></span></span></span></div>
+                <div id="loveHeart">
+                    <canvas id="garden" width="670" height="625"></canvas>
+                    <div id="words" style="position: absolute; top: 246px; left: 520px;">
+                        <div id="messages" style="display: block;">
+                            Время, которым я очень дорожу
+                            <div id="elapseClock"><span class="digit">3266</span> days <span class="digit">02</span> hours <span class="digit">22</span> minutes <span class="digit">10</span> seconds</div>
+                        </div>
+                        <div id="loveu" style="display: block;">
+                            Твой любимый котик<br>
+                            <div class="signature">Твоя девочка</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <a href="#">....</a><br>
+                <a href="#">....</a><br>
+                
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        var together = new Date();
+        together.setFullYear(2020, 04, 26);
+        together.setHours(22);
+        together.setMinutes(10);
+        together.setSeconds(0);
+        together.setMilliseconds(0);
+        
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+            document.body.appendChild(msg);
+            $("#code").css("display", "none")
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            setTimeout(function () {
+                startHeartAnimation();
+            }, 5000);
+        
+            timeElapse(together);
+            setInterval(function () {
+                timeElapse(together);
+            }, 500);
+        
+            adjustCodePosition();
+            $("#code").typewriter();
+        }
+        </script>
+        
+        </body>
+        </html>
